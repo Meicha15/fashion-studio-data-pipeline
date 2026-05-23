@@ -11,7 +11,7 @@ https://docs.google.com/spreadsheets/d/1a20oW2CHLPMPpFtIJGZk5Y-ERt63aCXymBOhZ6xB
 
 # Melihat database di postgreSQL
 psql --username developer --dbname productsdb -> \dt -> SELECT * FROM productstoscrape;
-pass : meicha15 
+pass : m****** 
 (Saya menjalankannya di Terminal)
 
 # Menjalankan unit test pada folder test
@@ -20,7 +20,8 @@ coverage run -m pytest test
 # Menjalankan test coverage pada folder tests (coverage report)
 coverage report
 
-Hasil coverage report:
+# Hasil coverage report:
+```text
 (.env) E:\submission-pemda>coverage report
 Name                     Stmts   Miss  Cover
 --------------------------------------------
