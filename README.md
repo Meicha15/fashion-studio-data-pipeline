@@ -1,18 +1,23 @@
 # Fashion-studio-data-pipeline
-Menggunakan virtual environment sebelum menjalankan program, namun ketika submission ini diunggah folder .env dihapus karena pada kriteria tidak terdaftar.
+
+Proyek ini adalah sebuah data pipeline otomatis berbasis **ETL (Extract, Transform, Load)** yang mengekstrak data produk dari platform *Fashion Studio*, melakukan pembersihan dan standardisasi data, lalu memuatnya ke berbagai target penyimpanan data sekaligus untuk kebutuhan analisis lebih lanjut.
+
+## 🛠️ Alur Kerja ETL
+
+1. **Extract:** Melakukan web scraping data produk (dari halaman 1 sampai 50) menggunakan `BeautifulSoup` dan `requests`.
+2. **Transform:** Menggunakan `Pandas` untuk membersihkan data mentah, menyesuaikan tipe data, menangani nilai kosong, serta memformat kolom (seperti *Price, Rating, Size, Gender*, dan *Timestamp*).
+3. **Load:** Menyimpan data yang telah bersih dan terstruktur ke tiga target penyimpanan:
+   - **Database Relasional:** PostgreSQL (`psycopg2` & `SQLAlchemy`)
+   - **Cloud Spreadsheet:** Google Sheets API
+   - **Lokal File:** Berkas CSV (`products_data.csv`)
+---
+## Panduan Penggunaan & Pengujian Pipeline
 
 # Menjalankan Skrip
-main.py 
-Di main.py memuat extract.py, transform.py, dan load.py
-(saya menggunakan command prompt(terminal))
+python main.py
 
 # URL google sheet
 https://docs.google.com/spreadsheets/d/1a20oW2CHLPMPpFtIJGZk5Y-ERt63aCXymBOhZ6xBb6g/edit?gid=0#gid=0
-
-# Melihat database di postgreSQL
-psql --username developer --dbname productsdb -> \dt -> SELECT * FROM productstoscrape;
-pass : m****** 
-(Saya menjalankannya di Terminal)
 
 # Menjalankan unit test pada folder test
 coverage run -m pytest test
@@ -20,9 +25,9 @@ coverage run -m pytest test
 # Menjalankan test coverage pada folder tests (coverage report)
 coverage report
 
-# Hasil coverage report:
+### Hasil Laporan Cakupan Pengujian (Coverage Report)
+
 ```text
-(.env) E:\submission-pemda>coverage report
 Name                     Stmts   Miss  Cover
 --------------------------------------------
 test\test_extract.py        45      1    98%
@@ -33,3 +38,20 @@ utils\load.py               28     14    50%
 utils\transform.py          35      5    86%
 --------------------------------------------
 TOTAL                      194     29    85%
+
+```
+## 📁 Struktur Proyek
+
+```text
+├── test/
+│   ├── test_extract.py       # Unit testing untuk modul ekstraksi
+│   ├── test_load.py          # Unit testing untuk modul pemuatan data
+│   └── test_transform.py     # Unit testing untuk modul transformasi
+├── utils/
+│   ├── extract.py            # Logika ekstraksi data / Web Scraping (Halaman 1-50)
+│   ├── load.py               # Logika pemuatan data (PostgreSQL, Google Sheets, CSV)
+│   └── transform.py          # Logika pembersihan dan penyesuaian format data
+├── main.py                   # Skrip utama untuk menjalankan seluruh alur ETL
+├── my-project-fashion-studio-73416d9e7b84.json  # Kredensial Google Sheets API
+├── products_data.csv         # Output data hasil ETL dalam bentuk lokal CSV
+└── requirements.txt          # Daftar dependensi pustaka Python proyek
