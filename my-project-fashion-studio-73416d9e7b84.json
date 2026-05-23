@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "my-project-fashion-studio",
+  "private_key_id": "73416d9e7b84239318f762ec11631045b5109c36",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDLXsJ68SEFUozC\nvDTJYFSZp5iqGhPbK8XMJ7yCTlGc9JJMFRIbO5oHSJUIAsAOVU9ZgVjwQz2sltst\nrN92WF9IkPXEv629JAeVkIryHhe7uHZ7e0zwrTNDMxhdduVzUxEdZ8f1xyc94uvV\nlZE6rh1maROpA2WLp4g0lV5FaSYhZqX2rxajH6O9ysbiOS8rAKH3rr1tAw5DJfwi\nWuGxccEm+G/RYd5O34zf8g49POVbMwvTR5/11SqS2ILYOXi/Z7dMV5+/1s9SlZwv\ne50qHh10g5cobt95b/zQ7zrv9Z2uioISxnXLxo5k4D2pMb4+ehO70eu7O4wBrPYv\nktX/ae9pAgMBAAECggEAAOmRTX5UaRP8WOlfiy+JmaBFzwvSAQSQgVK3ttXgNsHM\nu+O/LUPd53w6QkTCFw1OF+lahxNqJojzuUZia4d7qp3tEfCUZ1fXdCK0fSQmhTUP\nf670HGVOhnOjFMvc6Ac6OWmQh86HibkfPxnWwsYd5b/N9w7/QlhIyGXgSQLd1gJ7\n2OZGxJpLiHK7jhMNWYcTx2YmgfCgSQfGjUX9k81lLIWG+thSrUww7AKrkutX2Q19\nDLkWS/pQQOX2a8mbmJv/Mh28QtqorvCXERMMqiR77P+8dJSIENiMwIqta61GSq7Q\nNLb43y1z5ORD5bVQH8B02f0NtYuWbAEfhd1oXcLT/QKBgQDzSvadPOHl5BLGcJXR\n6L0HGxETLzZTAuxb3YC7dODyWVL83ob/g2RYpbyfP3tAvubQqyGv/1Wwx4AVDVKt\ndE1lTjOwPvrL8UQI41JEM2mow8/NYaawJapYnM516+OEQBhdI7impp5R31bqSyGG\nuJfdVLscK/r0tzs22TydlX8wvQKBgQDV/f7a4LVJV6MhmMyDSE50NXllB3t5KMAT\n03qw6oazCtr7MZJk/sOkx0TQpjURd04SbVnqVXt1MsjzK0b91kaP1H5rwt61cG8S\naCtfyohWyC+vUnBg3FPbeKt5yKZR1Ow53Tz7114vtnYqVkpo1dD4RKm+Rvj9dbU3\non8O3XayHQKBgGktQyf+pfnoe2VmTp6MawujW+JbSrTgUqX0QC7J/GVI0GOZH+te\nNgdMvxppKzN2U/ppwQqA696coHZ5aACsgrkE8buDvpBkIPFmtK3fPBJFdJRpXtJP\ntjDQuUCpVZZazy2Uv8LrzQ2/66cmC7xeGOkKNEmdicQ5YlP33giSFIZRAoGAHCBk\nbRR3/4nbUUEqMF9CoJeeux6+pfArPu/fAn3w8nuMyNN9MHUj9faTHvGZrBAIXPeu\nh9Rwg7kHHJ8ll5ugbqs5aqSUbTi4AK1cdhzCytVJHzwwtSqAgypbL4imA79+xSRF\nLbzjDlZnNa1d3mWsL9WmkfH2LCpahVOAa83EGikCgYAr9Z37FMU4oUvkGBuH1H4k\nhEvmRulFA5oBAwRGlTaMZtp5Bqtv+/ZHw5+oUUboHAK3dcFkQiHVreoFrBAFTcMI\nlfCzGEIOx9fAX6Xts8bdz0eIX0I3SF6gCWlcgvQk6L1G93Rj6pfmBmCFUZOTZ6Pu\ndOjr3XQEIifx5FH0DvyCSw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "googlesheets-exercise@my-project-fashion-studio.iam.gserviceaccount.com",
+  "client_id": "112918397810676325286",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googlesheets-exercise%40my-project-fashion-studio.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
